@@ -19,3 +19,7 @@ variable "subject" {
 output "hello_world" {
   value = "Hello, ${var.subject}!"
 }
+
+output "new_day" {
+  value = "It's a new day!"
+}
