@@ -23,3 +23,11 @@ output "hello_world" {
 output "new_day" {
   value = "It's a new day!"
 }
+
+resource "random_pet" "pet" {
+  length = 4
+}
+
+output "pet" {
+  value = random_pet.pet.id
+}
